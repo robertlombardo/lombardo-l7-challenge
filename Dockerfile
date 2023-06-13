@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 RUN apk update && apk upgrade
 RUN apk add git
 
-# copy the app, note .dockerignore
+# copy the app
 COPY . /usr/src/app
 RUN npm install
 

@@ -1,28 +1,11 @@
 version: "3"
 
 services:
-  # db-todo-app:
-  #   image: mongo:4.0
-  #   container_name: db-todo-app
-  #   restart: always
-  #   ports: 
-  #     - 27017:27017
-  #   env_file: 
-  #     - ./database/.env
-  #   volumes:
-  #       - ./database/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
-  
-  todo-app:
+  benford-app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: benford-app
+    container_name: benford-app-container
     restart: always
-    volumes:
-      - ./:/usr/src/app
     ports:
       - 3000:3000
-    # env_file: 
-    #   - .env
-    # depends_on:
-    #   - db-todo-app
