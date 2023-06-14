@@ -22,4 +22,6 @@ git clone git@github.com:robertlombardo/lombardo-l7-challenge.git
 # Run the application with docker-compose
 cd lombardo-l7-challenge
 docker-compose up --build
+
+# Load the client in a web browser at http://localhost:3000
 ```
